@@ -1,0 +1,90 @@
+<meta charset="UTF-8">
+<title>Time Sheet</title>
+
+<!-- jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Bootstrap CDN-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="style.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+<!-- Firebase Reference -->
+<script src="https://www.gstatic.com/firebasejs/5.8.4/firebase.js"></script>
+
+<body>
+    <div class="row">
+        <div class=col-sm-2></div>
+        <div class=col-sm-8>
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                    <h1 class="display-4">Employee Data Management</h1>
+                    <p class="lead">A Comprehensive Directory of Employee Billable Hours</p>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="card-header">
+                    Current Employee
+                </div>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Employee Name</th>
+                            <th scope="col">Role</th>
+                            <th scope="col">Start Date</th>
+                            <th scope="col">Months Worked</th>
+                            <th scope="col">Monthly Rate ($)</th>
+                            <th scope="col">Total Billed ($)</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td scope="row">ramdom name</dh>
+                            <td>random role</td>
+                            <td>03/02/2019</td>
+                            <td>2</td>
+                            <td>36</td>
+                            <td>72</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+
+            <div class="card submitForm">
+                <div class="card-header">
+                    Add Employee
+                </div>
+                <form>
+                    <div class="form-group">
+                        <label for="formGroupExampleInput">Employee Name</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Jane Doe">
+                    </div>
+                    <div class="form-group">
+                        <label for="formGroupExampleInput2">Role</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="CEO">
+                    </div>
+                    <div class="form-group">
+                        <label for="formGroupExampleInput">Start Date</label>
+                        <input type="date" class="form-control" id="formGroupExampleInput" placeholder="01/08/1900">
+                    </div>
+                    <div class="form-group">
+                        <label for="formGroupExampleInput2">Monthly Rate</label>
+                        <input type="number" class="form-control" id="formGroupExampleInput2" placeholder="2000">
+                    </div>
+
+                    <button type="button" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+
+
+
+        </div>
+        <div class="col-sm-2"></div>
+    </div>
+
+    <script src="logic.js"></script>
+</body>
